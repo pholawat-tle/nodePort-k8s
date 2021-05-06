@@ -7,6 +7,9 @@ spec:
   selector:
     component: web
   ports:
-    - port: 80
+    - port: 80 
+      # port exposed to other services
       targetPort: 3000
+      # container port
       nodePort: 30000
+      # port exposted to the outside world
